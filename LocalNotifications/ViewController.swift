@@ -24,7 +24,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
 
     //request for an alert, a message to show, a badge and sound.  Also need a closure when the user approves or denied the request.
-    func registerLocal() {
+    @objc func registerLocal() {
         
         let center = UNUserNotificationCenter.current()
         
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     2. trigger (when to show it)
     3. request (the combination of content and trigger)
     */
-    func scheduleLocal() {
+    @objc func scheduleLocal() {
         
         registerLocal()
         
